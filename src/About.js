@@ -21,10 +21,11 @@ function About() {
             <h1 className="about__heading">About Me</h1>
             <div className="about__meta">
               <p className="about__text p__color">
-              Hello, my name is Sumit Kamble, and I work as a full-stack software developer. having an overall 1.6 years of experience in development.
-I earned my BCA at Sangola College in Sangola  (2017-2020).
- and my MCA from YSPM's Yashoda Technical Campus (2020–2022).
- I'm searching for a new job right now.</p>
+              Hello, my name is Sumit Kamble, and I work as a full-stack software developer, having an overall <a class="sweet">1.6 years</a>  of experience in development.I earned my BCA at Sangola College in Sangola  (2017-2020) Having and my MCA from YSPM's Yashoda Technical Campus (2020–2022). I'm searching for a new job right now.</p>
+              <br></br>
+              <h1 style={{ fontSize: "30px" }}>SUMMARY</h1> 
+              <p className="about__text p__color">
+              Well-qualified Full Stack Developer familiar with wide range of programming utilities and languages. Knowledgeable of backend and frontend development requirements. Handles any part of process with ease. Collaborative team player with excellent technical abilities offering 1.6 years of related experience.</p>
               <br></br>
               <p className="about__text p__color">
                 <h1 style={{ fontSize: "30px" }}>WORK EXPERIENCE</h1>
@@ -34,8 +35,7 @@ I earned my BCA at Sangola College in Sangola  (2017-2020).
                   <h3> FULL-STACK SOFTWARE DEVELOPER </h3>
                 </p>
                 <p>
-                  Work with aloha technology as full stack devloper from Nov 2022.
-                  work with various technologies such as html, css, ajax, javascript, nodejs, expressjs, and mongodb. with the team of 12+ developers ,Wrote code that was well-structured, tested, readable, and maintainable
+                I work with Aloha Technology​​​​​​ as a full stack developer from Nov 2022. I work with various technologies such as html, css, ajax, javascript, nodejs, expressjs, and mongodb. with a team of 12+ developers. Wrote code that was well-structured, tested, readable, and maintainable
                   <h4>Projects</h4>
 
                   <h6>* Investment Application</h6>
