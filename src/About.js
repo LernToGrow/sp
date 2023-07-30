@@ -52,7 +52,7 @@ function About() {
                   <h3>CLARITECH SOLUTIONS JAN 2022 - SEP 2022 PRESENT / PUNE INDIA</h3>
                   <h3> MERN STACK DEVELOPER INTERN </h3>
                 </p>
-                <p>• Remain updated with advance techniques with the group of 15 junior developers</p>
+                <p>• Remain updated with advance techniques with the group of 6 junior developers</p>
                 <p>• Wrote code that was well-structured, tested, readable, and maintainable</p>
                 <p>• contributed to the development of six or more applications; and Contributed to the creation and application of system architecture designs and methods</p>
                 <p>• ReactJS was used to create a web application and component.</p>
