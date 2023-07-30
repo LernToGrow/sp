@@ -2,8 +2,7 @@ import React from "react";
 import "./About.css";
 // import aboutImg from "./img/b1.png";
 import aboutImg from "./img/Sumit_profile.jpg";
-import resume from "./Resume/Sumit kamble MERN.pdf";
-import newresume from "./Resume/sumitaloha.pdf";
+import newresume from "./Resume/sumitkamble.pdf";
 function About() {
   //  Up To Top Btn
   window.addEventListener("scroll", function () {
@@ -31,7 +30,7 @@ function About() {
                 <h1 style={{ fontSize: "30px" }}>WORK EXPERIENCE</h1>
                 <br></br>
                 <p>
-                  <h3>ALOHA TECHNOLOGY PVT LTD, PUNE ( NOV 2021 - PRESENT )</h3>
+                  <h3>ALOHA TECHNOLOGY PVT LTD, PUNE ( NOV 2022 - PRESENT )</h3>
                   <h3> FULL-STACK SOFTWARE DEVELOPER </h3>
                 </p>
                 <p>
@@ -50,7 +49,7 @@ function About() {
                 {/* <h1 style={{ fontSize: "30px" }}>WORK EXPERIENCE</h1> */}
                 <br></br>
                 <p>
-                  <h3>CLARITECH SOLUTIONS JAN 2022 - JUL 2022 PRESENT / PUNE INDIA</h3>
+                  <h3>CLARITECH SOLUTIONS JAN 2022 - SEP 2022 PRESENT / PUNE INDIA</h3>
                   <h3> MERN STACK DEVELOPER INTERN </h3>
                 </p>
                 <p>• Remain updated with advance techniques with the group of 15 junior developers</p>
