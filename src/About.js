@@ -3,7 +3,7 @@ import "./About.css";
 // import aboutImg from "./img/b1.png";
 import aboutImg from "./img/Sumit_profile.jpg";
 import resume from "./Resume/Sumit kamble MERN.pdf";
-import newresume from "./Resume/sumitalohanewresume.pdf";
+import newresume from "./Resume/sumitaloha.pdf";
 function About() {
   //  Up To Top Btn
   window.addEventListener("scroll", function () {
