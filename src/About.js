@@ -20,11 +20,11 @@ function About() {
             <h1 className="about__heading">About Me</h1>
             <div className="about__meta">
               <p className="about__text p__color">
-              Hello, my name is Sumit Kamble, and I work as a full-stack software developer, having an overall <a class="sweet">1.6 years</a>  of experience in development.I earned my BCA at Sangola College in Sangola  (2017-2020) Having and my MCA from YSPM's Yashoda Technical Campus (2020–2022). I'm searching for a new job right now.</p>
+              Hello, my name is Sumit Kamble, and I work as a full-stack software developer, having an overall <a class="sweet">1.8 years</a>  of experience in development.I earned my BCA at Sangola College in Sangola  (2017-2020) Having and my MCA from YSPM's Yashoda Technical Campus (2020–2022). I'm searching for a new job right now.</p>
               <br></br>
               <h1 style={{ fontSize: "30px" }}>SUMMARY</h1> 
               <p className="about__text p__color">
-              Well-qualified Full Stack Developer familiar with wide range of programming utilities and languages. Knowledgeable of backend and frontend development requirements. Handles any part of process with ease. Collaborative team player with excellent technical abilities offering 1.6 years of related experience.</p>
+              Well-qualified Full Stack Developer familiar with wide range of programming utilities and languages. Knowledgeable of backend and frontend development requirements. Handles any part of process with ease. Collaborative team player with excellent technical abilities offering 1.8 years of related experience.</p>
               <br></br>
               <p className="about__text p__color">
                 <h1 style={{ fontSize: "30px" }}>WORK EXPERIENCE</h1>
