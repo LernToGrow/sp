@@ -2,7 +2,7 @@ import React from "react";
 import "./About.css";
 // import aboutImg from "./img/b1.png";
 import aboutImg from "./img/Sumit_profile.jpg";
-import newresume from "./Resume/sumitkamble.pdf";
+import newresume from "./Resume/sumitkambleup.pdf";
 function About() {
   //  Up To Top Btn
   window.addEventListener("scroll", function () {
