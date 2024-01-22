@@ -13,6 +13,8 @@ function Contact() {
                             <p className="hire__text white">I am available for work. Connect with me via phone:</p>
                            {/* <p className="hire__text white"><strong>+917798042167</strong> or email <strong>sumitkamble1252@gmail.com</strong></p> */}
                            <p className="hire__text white"><strong>+917709832167</strong> or email <strong>sumitkamble2606@gmail.com</strong></p>
+                           
+                           {/* <p className="hire__text white"><strong>+917709832167</strong> or email <strong>sumitkamble2606@gmail.com</strong></p> */}
                         </div>
                         {/* <div className="input__box">
                            <input type="text" className="contact name" placeholder="Your name *" />

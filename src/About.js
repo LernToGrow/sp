@@ -2,13 +2,33 @@ import React from "react";
 import "./About.css";
 // import aboutImg from "./img/b1.png";
 import aboutImg from "./img/Sumit_profile.jpg";
-import newresume from "./Resume/sumitkambleup.pdf";
+// import newresume from "./Resume/sumitkambleup.pdf";
+import newresume from "./Resume/sumitaloha_jan2024.pdf";
+
 function About() {
   //  Up To Top Btn
   window.addEventListener("scroll", function () {
     const upToTop = document.querySelector("a.bottom__to__top");
     upToTop.classList.toggle("active", window.scrollY > 0);
   });
+
+  function calculateDateDifferenceInYearsAndMonths(date1, date2) {
+    // Parse the input dates to ensure they are Date objects
+    const parsedDate1 = new Date(date1);
+    const parsedDate2 = new Date(date2);
+
+    // Calculate the difference in years and months
+    let yearsDifference = parsedDate2.getFullYear() - parsedDate1.getFullYear();
+    let monthsDifference = parsedDate2.getMonth() - parsedDate1.getMonth();
+
+    // Adjust for cases where monthsDifference is negative
+    if (monthsDifference < 0) {
+        yearsDifference--;
+        monthsDifference += 12;
+    }
+
+    return { years: yearsDifference, months: monthsDifference };
+}
   return (
     <div className="about component__space" id="About">
       <div className="container">
@@ -20,11 +40,11 @@ function About() {
             <h1 className="about__heading">About Me</h1>
             <div className="about__meta">
               <p className="about__text p__color">
-              Hello, my name is Sumit Kamble, and I work as a full-stack software developer, having an overall <a class="sweet">1.8 years</a>  of experience in development.I earned my BCA at Sangola College in Sangola  (2017-2020) Having and my MCA from YSPM's Yashoda Technical Campus (2020–2022). I'm searching for a new job right now.</p>
+              Hello, my name is Sumit Kamble, and I work as a full-stack software developer, having an overall <a class="sweet">{years} Year And {months+8} Months</a>  of experience in development.I earned my BCA at Sangola College in Sangola  (2017-2020) Having and my MCA from YSPM's Yashoda Technical Campus (2020–2022). I'm searching for a new job right now.</p>
               <br></br>
               <h1 style={{ fontSize: "30px" }}>SUMMARY</h1> 
               <p className="about__text p__color">
-              Well-qualified Full Stack Developer familiar with wide range of programming utilities and languages. Knowledgeable of backend and frontend development requirements. Handles any part of process with ease. Collaborative team player with excellent technical abilities offering 1.8 years of related experience.</p>
+              Well-qualified Full Stack Developer familiar with wide range of programming utilities and languages. Knowledgeable of backend and frontend development requirements. Handles any part of process with ease. Collaborative team player with excellent technical abilities offering {years} Year And {months+8} Months of relevant experience.</p>
               <br></br>
               <p className="about__text p__color">
                 <h1 style={{ fontSize: "30px" }}>WORK EXPERIENCE</h1>
