@@ -3,7 +3,7 @@ import "./About.css";
 // import aboutImg from "./img/b1.png";
 import aboutImg from "./img/Sumit_profile.jpg";
 // import newresume from "./Resume/sumitkambleup.pdf";
-import newresume from "./Resume/sumitaloha_jan2024.pdf";
+import newresume from "./Resume/sumitkamblealoha.pdf";
 
 function About() {
   //  Up To Top Btn
@@ -29,6 +29,9 @@ function About() {
 
     return { years: yearsDifference, months: monthsDifference };
 }
+const date1 = '2022-11-23';
+const date2 = new Date();
+const { years, months } = calculateDateDifferenceInYearsAndMonths(date1, date2);
   return (
     <div className="about component__space" id="About">
       <div className="container">
