@@ -1,9 +1,11 @@
 import React from "react";
 import "./About.css";
 // import aboutImg from "./img/b1.png";
-import aboutImg from "./img/Sumit_profile.jpg";
+// import aboutImg from "./img/Sumit_profile.jpg";
+import aboutImg from "./img/sumitprofile.jpeg";
 // import newresume from "./Resume/sumitkambleup.pdf";
-import newresume from "./Resume/sumitkamblealoha.pdf";
+// import newresume from "./Resume/sumitaloha_jan2024.pdf";
+import newresume from "./Resume/sumitaloha04march2024.pdf";
 
 function About() {
   //  Up To Top Btn
@@ -26,12 +28,24 @@ function About() {
         yearsDifference--;
         monthsDifference += 12;
     }
+    if(monthsDifference > 12){
+      monthsDifference-=12;
+      yearsDifference = yearsDifference+ 1;
+
+    }
 
     return { years: yearsDifference, months: monthsDifference };
 }
 const date1 = '2022-11-23';
+// const date2 = '2025-4-23';
 const date2 = new Date();
-const { years, months } = calculateDateDifferenceInYearsAndMonths(date1, date2);
+let { years, months } = calculateDateDifferenceInYearsAndMonths(date1, date2);
+let totalmonths= months+8;
+if(totalmonths >= 12){
+  totalmonths=totalmonths-12;
+  years = years+ 1;
+}
+
   return (
     <div className="about component__space" id="About">
       <div className="container">
@@ -43,42 +57,96 @@ const { years, months } = calculateDateDifferenceInYearsAndMonths(date1, date2);
             <h1 className="about__heading">About Me</h1>
             <div className="about__meta">
               <p className="about__text p__color">
-              Hello, my name is Sumit Kamble, and I work as a full-stack software developer, having an overall <a class="sweet">{years} Year And {months+8} Months</a>  of experience in development.I earned my BCA at Sangola College in Sangola  (2017-2020) Having and my MCA from YSPM's Yashoda Technical Campus (2020–2022). I'm searching for a new job right now.</p>
+              Hello, my name is Sumit Kamble, and I work as a full-stack software developer, having an overall <a class="sweet">{years} Year And {totalmonths} Months</a>  of experience in development.I earned my BCA at Sangola College in Sangola  (2017-2020) Having and my MCA from YSPM's Yashoda Technical Campus (2020–2022). I'm searching for a new job right now.</p>
               <br></br>
               <h1 style={{ fontSize: "30px" }}>SUMMARY</h1> 
               <p className="about__text p__color">
-              Well-qualified Full Stack Developer familiar with wide range of programming utilities and languages. Knowledgeable of backend and frontend development requirements. Handles any part of process with ease. Collaborative team player with excellent technical abilities offering {years} Year And {months+8} Months of relevant experience.</p>
+              Well-qualified Full Stack Developer familiar with wide range of programming utilities and languages. Knowledgeable of backend and frontend development requirements. Handles any part of process with ease. Collaborative team player with excellent technical abilities offering {years} Year And {totalmonths} Months of relevant experience.</p>
               <br></br>
-              <p className="about__text p__color">
+              <div className="about__text p__color">
                 <h1 style={{ fontSize: "30px" }}>WORK EXPERIENCE</h1>
                 <br></br>
                 <p>
-                  <h3>ALOHA TECHNOLOGY PVT LTD, PUNE ( NOV 2022 - PRESENT )</h3>
+                  <h3>1.ALOHA TECHNOLOGY PVT LTD, PUNE ( NOV 2022 - PRESENT )</h3>
                   <h3> FULL-STACK SOFTWARE DEVELOPER </h3>
                 </p>
                 <p>
-                I work with Aloha Technology​​​​​​ as a full stack developer from Nov 2022. I work with various technologies such as html, css, ajax, javascript, nodejs, expressjs, and mongodb. with a team of 12+ developers. Wrote code that was well-structured, tested, readable, and maintainable
-                  <h4>Projects</h4>
+                I work with Aloha Technology​​​​​​ as a full stack developer from Nov 2022. I work with various technologies such as html, css, ajax, javascript, nodejs, expressjs, and mongodb. with a team of 12+ developers. Wrote code that was well-structured, tested, readable, and maintainable           </p>
+                  <h6 style={{margin:" 10px 0 10px 0"}}>PROJECTS INVOLVED</h6>
 
-                  <h6>* Investment Application</h6>
-                  <p>Investment portal web-based and mobile applications, which provide online investment and offline investment plans for investors, have different modules for both users.</p>
-                  <h6>* Salon Management Application</h6>
-                  <p>A web-based salon management application that provides online appointment booking for clients and a mobile application that provides online beauty product sales.</p>
-                  <h6>* Banking Application</h6>
-                  <p>Work on an application that provides banking products, such as online loans and credit cards, for the user to help find the best credit cards and loans with his profile.</p>
-                </p>
-                </p>
+                  <h6>* Property Rental and Sales Application ( Aloha Technology PVT LTD, Pune )</h6>
+                  <h6 style={{margin:" 10px 0 10px 0"}}>* Description</h6>
+                  <p> The Property Rental and Sales Application is a versatile platform designed to facilitate property
+                    transactions between landlords, tenants, and prospective buyers. It offers both mobile and web applications to
+                    efficiently manage property listings, streamline rental and sales processes, and maintain financial records related
+                    to property management. With multiple admin roles, the platform ensures effective management and oversight of
+                    property-related activities.
+                    </p>
+                    <h6 style={{margin:" 10px 0 10px 0"}}>* Responsibilities</h6>
+
+                    <ul>
+                    <li>• Work with various technologies with the team of 12+ developers, wrote code that was well structured, tested,
+                    readable, and maintainable.</li>
+                    <li>• Utilize various programming languages to provide application functionality</li>
+                    <li>• Collaborate with Client to gather and understand project requirements, including features, functionalities, and
+                    user stories</li>
+                    <li>• Translate business requirements into technical specifications and architectural designs
+                    </li>
+                    <li>• Integrate third-party APIs for features such as geolocation services, payment gateways, property listing
+                    syndication, and authentication</li>
+                    <li>• Write unit tests, integration tests, and end-to-end tests to ensure code quality, reliability, and functionality</li>
+                    <li>• Conduct thorough testing of the application to identify and fix bugs, errors, and edge cases</li>
+                  </ul>
+
+
+                  <h6 style={{margin:" 10px 0 10px 0"}}>2. Investment Application ( Aloha Technology PVT LTD, Pune )</h6>
+                  <h6 style={{margin:" 10px 0 10px 0"}}>* Description</h6>
+                  <p>The Investment Application is a comprehensive platform designed to cater to the diverse
+                      needs of investors, offering both online and offline investment opportunities through web-based and
+                      mobile applications. With distinct modules tailored for different user groups, this platform provides a
+                      seamless and user-friendly experience for both novice and experienced investors.</p>
+                  <h6 style={{margin:" 10px 0 10px 0"}}>* Responsibilities</h6>
+
+                    <ul>
+                      <li>• Developed web pages.</li>
+                      <li>• Doing validations on all the forms</li>
+                      <li>• Involved during requirement gathering.</li>
+                      <li>• Designed and developed the user stories received from business.</li>
+                      <li>• Actively participated in production deployments</li>
+                      <li>• Optimization of code.</li>
+                      <li>• Understood business process architecture and conducted sessions for the same</li>
+                      <li>• Result analysis, defect reporting, performance enhancement and fixing it</li>
+                    </ul>
+   
+                
+                </div>
+
                 <p className="about__text p__color">
                 {/* <h1 style={{ fontSize: "30px" }}>WORK EXPERIENCE</h1> */}
                 <br></br>
                 <p>
                   <h3>CLARITECH SOLUTIONS JAN 2022 - SEP 2022 PRESENT / PUNE INDIA</h3>
-                  <h3> MERN STACK DEVELOPER INTERN </h3>
+                  <h3> SOFTWARE DEVELOPER </h3>
                 </p>
-                <p>• Remain updated with advance techniques with the group of 15 junior developers</p>
-                <p>• Wrote code that was well-structured, tested, readable, and maintainable</p>
-                <p>• contributed to the development of six or more applications; and Contributed to the creation and application of system architecture designs and methods</p>
-                <p>• ReactJS was used to create a web application and component.</p>
+
+
+                <h6 style={{margin:" 10px 0 10px 0"}}>1.Salon Management Application (Claritech Solutions ,Pune)</h6>
+                  <h6 style={{margin:" 10px 0 10px 0"}}>* Description</h6>
+                  <p>This web-based platform offers a range of features designed to simplify appointment
+                    scheduling, manage staff, inventory, and facilitate online sales of beauty products through a mobile
+                    application and they provide Online Appointment Booking ,Staff Management ,Inventory Management ,Mobile
+                    Application for Beauty Product Sales ,Analytic s and Reporting.</p>
+                  <h6 style={{margin:" 10px 0 10px 0"}}>* Responsibilities</h6>
+
+                    <ul>
+                      <li>• Developed web pages.</li>
+                      <li>• Remain updated with advance techniques with the group of 15 junior developers</li>
+                      <li>• Wrote code that was well-structured, tested, readable, and maintainable</li>
+                      <li>• contributed to the development of six or more applications; and Contributed to the creation and application of system architecture designs and methods</li>
+                      <li>• Understood business process architecture and conducted sessions for the same</li>
+                   
+                    </ul>
+
                 </p>
                 <div className="about__button d__flex align__items__center">
                   <a href={newresume}>
