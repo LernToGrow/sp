@@ -6,6 +6,7 @@ import aboutImg from "./img/sumitprofile.jpeg";
 // import newresume from "./Resume/sumitkambleup.pdf";
 // import newresume from "./Resume/sumitaloha_jan2024.pdf";
 import newresume from "./Resume/sumitaloha04march2024.pdf";
+import * as moment from 'moment'
 
 function About() {
   //  Up To Top Btn
@@ -14,37 +15,47 @@ function About() {
     upToTop.classList.toggle("active", window.scrollY > 0);
   });
 
-  function calculateDateDifferenceInYearsAndMonths(date1, date2) {
-    // Parse the input dates to ensure they are Date objects
-    const parsedDate1 = new Date(date1);
-    const parsedDate2 = new Date(date2);
+//   function calculateDateDifferenceInYearsAndMonths(date1, date2) {
+//     // Parse the input dates to ensure they are Date objects
+//     const parsedDate1 = new Date(date1);
+//     const parsedDate2 = new Date(date2);
 
-    // Calculate the difference in years and months
-    let yearsDifference = parsedDate2.getFullYear() - parsedDate1.getFullYear();
-    let monthsDifference = parsedDate2.getMonth() - parsedDate1.getMonth();
+//     // Calculate the difference in years and months
+//     let yearsDifference = parsedDate2.getFullYear() - parsedDate1.getFullYear();
+//     let monthsDifference = parsedDate2.getMonth() - parsedDate1.getMonth();
 
-    // Adjust for cases where monthsDifference is negative
-    if (monthsDifference < 0) {
-        yearsDifference--;
-        monthsDifference += 12;
-    }
-    if(monthsDifference > 12){
-      monthsDifference-=12;
-      yearsDifference = yearsDifference+ 1;
+//     // Adjust for cases where monthsDifference is negative
+//     if (monthsDifference < 0) {
+//         yearsDifference--;
+//         monthsDifference += 12;
+//     }
+//     if(monthsDifference > 12){
+//       monthsDifference-=12;
+//       yearsDifference = yearsDifference+ 1;
 
-    }
+//     }
 
-    return { years: yearsDifference, months: monthsDifference };
-}
-const date1 = '2022-11-23';
-// const date2 = '2025-4-23';
-const date2 = new Date();
-let { years, months } = calculateDateDifferenceInYearsAndMonths(date1, date2);
-let totalmonths= months+8;
-if(totalmonths >= 12){
-  totalmonths=totalmonths-12;
-  years = years+ 1;
-}
+//     return { years: yearsDifference, months: monthsDifference };
+// }
+// const date1 = '2022-11-23';
+// // const date2 = '2025-4-23';
+// const date2 = new Date();
+// let { years, months } = calculateDateDifferenceInYearsAndMonths(date1, date2);
+// let totalmonths= months+8;
+// if(totalmonths >= 12){
+//   totalmonths=totalmonths-12;
+//   years = years+ 1;
+// }
+
+const date1 = moment('2022-11-23', 'YYYY-MM-DD');
+const date2 = moment(new Date()).add(6, 'months');
+const diff = date2.diff(date1);
+const duration = moment.duration(diff)
+const years = duration.years()
+const totalmonths = duration.months()
+console.log({ years, totalmonths });
+
+
 
   return (
     <div className="about component__space" id="About">
