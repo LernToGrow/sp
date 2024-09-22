@@ -136,7 +136,7 @@ console.log({ years, totalmonths });
                 {/* <h1 style={{ fontSize: "30px" }}>WORK EXPERIENCE</h1> */}
                 <br></br>
                 <p>
-                  <h3>CLARITECH SOLUTIONS APRIL 2022 - SEP 2022 PRESENT / PUNE INDIA</h3>
+                  <h3>CLARITECH SOLUTIONS APRIL 2022 - OCT 2022 PRESENT / PUNE INDIA</h3>
                   <h3> SOFTWARE DEVELOPER </h3>
                 </p>
 
