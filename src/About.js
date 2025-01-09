@@ -6,7 +6,7 @@ import aboutImg from "./img/sumitprofile.jpeg";
 // import newresume from "./Resume/sumitkambleup.pdf";
 // import newresume from "./Resume/sumitaloha_jan2024.pdf";
 // import newresume from "./Resume/SumitkambleMERN28.pdf";
-import newresume from "./Resume/sumit-kamble-resume.pdf";
+import newresume from "./Resume/sumit-kamble-resume-new.pdf";
 import * as moment from 'moment'
 
 function About() {
